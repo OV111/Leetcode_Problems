@@ -14,7 +14,7 @@ var levelOrder = function (root) {
     if (!root) return [];
 
     const result = [];
-    const queue = root
+    const queue = [root]
 
     while (queue.length > 0) {
         const levelSize = queue.length;
